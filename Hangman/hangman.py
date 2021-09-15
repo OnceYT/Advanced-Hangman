@@ -2,8 +2,7 @@ import random
 
 with open("HangmanWords.txt") as f:
   """
-  Gets a list of words from the included HangmanWords.txt file
-  And stores it in the words var
+  Gets a list of words from the included HangmanWords.txt file and stores it in the words var
   A word is then randomly chosen from the list for the game
   This might take some time depending on the size of HangmanWords.txt
   """
