@@ -1,11 +1,7 @@
 import random 
 
+#Gets a list of words from the included HangmanWords.txt
 with open("HangmanWords.txt") as f:
-  """
-  Gets a list of words from the included HangmanWords.txt file and stores it in the words var
-  A word is then randomly chosen from the list for the game
-  This might take some time depending on the size of HangmanWords.txt
-  """
   words = f.read().splitlines()
 
 guess_list = [] #A list where we store amd compare the user's guesses
