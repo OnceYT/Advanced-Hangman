@@ -1,5 +1,4 @@
-import random 
-
+import random
 
 with open("hangman_words.txt") as f: #Gets a list of words from the included HangmanWords.txt
   words = f.read().splitlines()
