@@ -1,7 +1,7 @@
 import random 
 
 #Gets a list of words from the included HangmanWords.txt
-with open("HangmanWords.txt") as f:
+with open("hangman_words.txt") as f:
   words = f.read().splitlines()
 
 guess_list = []  #A list where we store amd compare the user's guesses
