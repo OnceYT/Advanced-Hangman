@@ -3,7 +3,7 @@ import random
 with open("hangman_words.txt") as f: #Gets a list of words from the included HangmanWords.txt
   words = f.read().splitlines()
 
-guess_list = []  #A list where we store amd compare the user's guesses
+guess_list = []  #A list where we store and compare the user's guesses
 lives = 10  #The total lives the user has
 word = random.choice(words).upper()  #Chooses a random word from the list
 print("Let's see if you can guess the word 👀\n")
@@ -12,11 +12,11 @@ def get_masked_word():
   """
   Function to encode the word in a format of dashes (_)
   It'll be ran on every user input to show the current game progression
-  The result will also be used to check if the user has guessed all the words successfully (and thus won the game)
+  The result will also be used to check if the user has guessed all the words successfully
   """
   return " ".join([letter if letter in guess_list else '_' for letter in word])
 
-while lives > 0:  #Will loop untill lives are 0
+while lives > 0:  #Loops until lives are 0 and prompts the user for an input
   print(f"{get_masked_word()} | You have {lives} lives remaining!\n")
   guess = input("Enter your guess: ").upper()
 
